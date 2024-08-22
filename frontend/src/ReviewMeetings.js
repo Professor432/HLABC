@@ -47,7 +47,7 @@ const ReviewMeetings = () => {
         console.error('Error fetching meetings:', error);
       }
     };
-
+  
     const fetchUsers = async () => {
       try {
         const response = await fetch('http://localhost:5000/api/user', {
@@ -61,10 +61,11 @@ const ReviewMeetings = () => {
         console.error('Error fetching users:', error);
       }
     };
-
-    fetchUsers();
-    fetchMeetings();
-  }, []);
+  
+    fetchUsers().then(() => {
+      fetchMeetings();
+    });
+  }, [users]);  
 
   const handleAttendanceChange = (meetingId, userId, attended) => {
     setAttendance(prev => ({
