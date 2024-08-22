@@ -1,0 +1,40 @@
+.review-meetings {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .review-meetings h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .review-meetings table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .review-meetings table thead th {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .review-meetings table tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .review-meetings table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .review-meetings table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .review-meetings table input[type="checkbox"] {
+    transform: scale(1.2);
+  }
+  
